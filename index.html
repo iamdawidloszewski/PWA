@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja Pogodowa</title>
+
+    <script src="https://kit.fontawesome.com/1c69f082e2.js" crossorigin="annonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Aplikacja Pogodowa</h1>
+    </header>
+    <main>
+<section class="weather">
+    <div class="city_name">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="city"></p>
+    </div>
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="podaj nazwę miasta">
+    </div>
+    <p class="error_message"></p>
+    <div class="info">
+        <div class="info_top">
+            <div class="left">
+                <p class="temp"></p>
+            </div>
+<div class="right">
+    <p class="date"></p>
+    <div class="weather_description">
+        <p class="description"></p>
+        <p class="feels_like"></p>
+    </div>
+</div>
+        </div>
+        <div class="info_bottom">
+            <div class="info_bottom_data">
+                <p><i class="fa-solid fa-wind"></i> prędkość wiatru</p>
+                <p class="wind_speed">20</p>
+            </div>
+            <div class="info_bottom_data">
+                <p><i class="fa-solid fa-gauge-high"></i> ciśnienie</p>
+                <p class="pressure"></p>
+            </div>
+            <div class="info_bottom_data">
+                <p><i class="fa-solid fa-droplet"></i> wilgotność</p>
+                <p class="humidity"></p>
+            </div>
+            <div class="info_bottom_data">
+                <p><i class="fa-solid fa-cloud"></i> zachmurzenie</p>
+                <p class="clouds"></p>
+            </div>
+            <div class="info_bottom_data">
+                <p><i class="fa-solid fa-eye"></i> widoczność</p>
+                <p class="visibility"></p>
+            </div>
+            <div class="info_bottom_data">
+                <p><i class="fa-solid fa-droplet"></i> opady</p>
+                <p class="rain"></p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer>  
+        <p>Projekt WSB Merito Gdansk 2026</p>
+        <p>Autor: Dawid Ł.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
